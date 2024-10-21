@@ -5,5 +5,6 @@ form.addEventListener("submit", (event) => {
   event.preventDefault();
   const entries = new FormData(event.target);
   const { dividend, divider } = Object.fromEntries(entries);
-  result.innerText = dividend / divider;
+
+  result.innerText = Math.floor(Number.parseFloat(dividend / divider));   // round down to nearest Integer
 });
