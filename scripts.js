@@ -37,7 +37,8 @@ form.addEventListener("submit", (event) => {
     return;
   };
 
-  result.innerText = Math.floor(Number.parseFloat(dividend / divider));   // round down to nearest Integer
+  // Success - return the result
+  result.innerText = Math.floor(dividend / divider);   // round down to nearest Integer
 });
 
 
