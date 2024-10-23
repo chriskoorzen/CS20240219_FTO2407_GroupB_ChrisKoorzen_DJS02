@@ -32,7 +32,10 @@ form.addEventListener("submit", (event) => {
     console.error(error);
     document.body.innerHTML = "";
     document.body.append(
-      Object.assign(document.createElement("h1"), {innerText:"Something critical went wrong. Please reload the page"})
+      Object.assign(
+        document.createElement("h1"), 
+        {innerText:"Something critical went wrong. Please reload the page"}
+      )
     );
     return;
   };
@@ -43,6 +46,12 @@ form.addEventListener("submit", (event) => {
 
 
 
+/**
+ * Tests if a string is a complete, valid number.
+ *
+ * @param {string} numberString
+ * @returns {boolean} True if string contains letters
+ */
 function containsText(numberString){
   /* 
     The project brief does not explicitly state whether or not
