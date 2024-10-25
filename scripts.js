@@ -47,9 +47,9 @@ form.addEventListener("submit", (event) => {
 
 
 /**
- * Tests if a string is a complete, valid number.
+ * Tests if a string contains any non-numeric characters
  *
- * @param {string} numberString
+ * @param {string} numberString A character string of numeric characters to test
  * @returns {boolean} True if string contains letters
  */
 function containsText(numberString){
